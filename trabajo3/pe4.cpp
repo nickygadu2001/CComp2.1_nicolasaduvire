@@ -3,7 +3,9 @@
 using namespace std;
 
 int main(){
-    for(10000;998001 ){
-        
+    int x;
+    int y;
+    for(x=10000;x<=998001;x++){
+        if ()
     }
 }

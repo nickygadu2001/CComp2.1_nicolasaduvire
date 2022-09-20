@@ -11,7 +11,17 @@ int main (){
             x=x/y;
         }
         else{
-            if()
+            int c;
+            int e=0; 
+            for(c=0;c<=y;c++){
+                if(c%y==0){
+                    e=e+1;
+
+                }
+                if(e>2){
+                    
+                } 
+            }
         }
     }
     return 0;
