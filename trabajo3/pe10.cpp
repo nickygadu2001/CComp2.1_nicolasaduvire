@@ -2,22 +2,19 @@
 
 using namespace std;
 
-int main(){
-    int y=100;
-    int x;
-    int z=0;
-    for(x=0;x<=y;x++){
-        int c;
-        int b=0;
-        for (c=0;c<=x;c++){
-            if (c%x==0){
-                b=b+1;
-            }
-        }
-        if (b<3){
-            z=z+x;
-            cout<<z<<endl;
-        }
+int numdiv(int x , int y ) {
+    if (y==0){
+        return true;
     }
-    return 0;
+    return (x%y!=0) ? false:numdiv(x,y-1);
+}
+
+int main(){
+    int z=20;
+    int w=z;
+    while (!(numdiv(w,z))){
+        w=w+10;
+    }
+    cout<<w<<endl;
+    return 0; 
 }
