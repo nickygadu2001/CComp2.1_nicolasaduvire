@@ -2,18 +2,21 @@
 
 using namespace std;
 
-int main(){
-    int x;
-    int a=0;
-    int y=100;
-    for(x=0;x<=10;x++){
-        if(x==a){
-            a=a+1;
-        }
-    } 
-    for(y%a!=0){
-        cout<<y<<endl;
-        break;
-    };
+bool multid(int y, int x ){
+    bool z;
+    if (y==0)
+    {
+        z=true;
+        return z;
+    }
+    return (y%x!=0)? false: multid(y,x-1);
+}
+int main (){
+    int a=20;
+    int b=a;
+    while(!multid(a,b)){
+        b=b+10;
+    }
+    cout<< b << endl;
     return 0;
 }
