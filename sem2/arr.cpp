@@ -3,19 +3,18 @@
 using namespace std;
 
 int main (){
-    int arreglo[5];
-    arreglo[0]=12;
+    int y=0;
+    int arreglo[5]={2,3,4,5,6};
+    /*arreglo[0]=12;
     arreglo[1]=23;
     arreglo[2]=34;
     arreglo[3]=45;
     arreglo[4]=56;
-
-    cout << arreglo[0]<< endl;
-    cout << arreglo[1]<< endl;
-    cout << arreglo[2]<< endl;
-    cout << arreglo[3]<< endl;
-    cout << arreglo[4]<< endl;
-
+*/
+    while(y<5){
+        cout << arreglo[y]<< endl;
+        y=y+1;
+    }
     return 0;
-    
+
 }
