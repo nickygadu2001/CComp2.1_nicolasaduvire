@@ -78,9 +78,9 @@ void DynamicIntArray::remove(int pos) {
             tmp[j] = data[i];
         }
     }
-    size =size-1;
+   /* size =size-1;
     delete [] data;
-    data = tmp;
+    data = tmp;*/
 }
 
 
