@@ -48,6 +48,17 @@ void DynamicIntArray::push_back(int elem) {
     data = tmp;
 }
 
+void DynamicIntArray::pop_back(int arr[]) {
+    // 1
+    int *tmp = new int[size - 1];
+    for(int i=0;i<size-2;i++){
+        if(i==size){
+            
+        }
+    }
+        
+}
+
 void DynamicIntArray::insert(int elem, int pos) {
     // 1
     int *tmp = new int[size + 1];
